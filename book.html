@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://kit.fontawesome.com/d027fbf3e1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        setInterval(function () {
+            document.getElementById("thanks").style = "color:blue";
+        }, 250);
+        setInterval(function () {
+            document.getElementById("thanks").style = "color:red";
+        }, 500);
+        setInterval(function () {
+            document.getElementById("thanks").style = "color:green";
+        }, 750);
+        setInterval(function () {
+            document.getElementById("thanks").style = "color:yellow";
+        }, 1000);
+    </script>
+    <title>Book Appointment</title>
+</head>
+
+<body onload="init();">
+    <div class="container">
+        <nav class="navbar background">
+            <ul class="nav-list">
+                <div class="logo"><img src="img/logo2.jpg" alt="logo"></div>
+                <li> <a href="index.html"> Home</a></li>
+                <li> <a href="prices.html"> About us</a></li>
+                <li> <a href="#doctors"> Doctors</a></li>
+                <li> <a href="help.html"> News</a></li>
+                <li> <a href="#treatment"> Treatment</a></li>
+            </ul>
+            <div class="rightNav">
+                <input type="text" name="search" id="search">
+                <button class="btn btn-sm">Search</button>
+            </div>
+
+        </nav>
+
+
+        <article class="main">
+            <h4 class="text-center" id="thanks">Thank You For Visiting!!!</h4>
+            <h1 class="page-heading">Book Appointment</h1>
+
+            <div id="form">
+                <form>
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+                    </p><br>
+                    <p>
+                        <label for="name">Email:</label>
+                        <input type="text" name="email" id="email" placeholder="Enter Your Email" required>
+                    </p><br>
+                    <p>
+                        <label for="name">Mobile No.:</label>
+                        <input type="tel" name="mob_no" id="mobile" pattern="^\d{10}$" placeholder="Enter Your Mobile No" required>
+                    </p><br>
+
+                    <p>
+                        <label for="name">Select Date:</label>
+                        <input type="date" id="date" max="3000-12-31" min="1000-01-01" class="form-control" required>
+                    </p><br>
+
+                    <p>
+                        <label for="name">Select Time:</label>
+                        <input type="time" id="time" class="form-control" required>
+                    </p><br>
+                    <p>
+                        <label for="name">Select Department:</label><br>
+                        <select class="form-control" id="dept" required>
+                            <option>General Health</option>
+                            <option>Cardiology</option>
+                            <option>Dental</option>
+                            <option>Medical Research</option>
+                        </select>
+                    </p><br>
+
+                    <p>
+                        <input type="button" value="Book Appointment" class="button-log" onclick="onSubmit();" required>
+
+                    </p>
+
+                </form>
+            </div>
+
+        </article>
+
+
+    </div>
+    <hr>
+    <div id="showrecords"></div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

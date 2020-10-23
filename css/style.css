@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.navbar 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+.nav-list
+{
+    width: 70%;
+    display: flex;
+    background-color:black;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-list li
+{
+    list-style: none;
+    padding: 26px 30px;
+}
+ .nav-list li a
+ {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Ubuntu',sans-serif;
+
+ }
+ .nav-list li a:hover
+ {
+    text-decoration: none;
+    color: red;
+}
+.rightNav
+{
+    width: 30%;
+    text-align: right;
+    padding: 0 23px
+}
+#search
+{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid;
+    border-radius: 9px;
+}
+.logo
+{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img
+{
+    width: 26%;
+    border-radius: 50px;
+    border: 3px solid white;
+}
+.background
+{
+    background: rgba(0, 0, 0, 0.7) url(../img/Home.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.firstSection
+{
+    height: 100vh;
+}
+.box-main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+.firstHalf
+{
+    width: 80%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+.secondHalf
+{
+    width: 30%;
+}
+.secondHalf img
+{
+    width: 70%;
+    border: 4px;
+    border-radius: 29px;
+    display: block;
+    margin: auto;
+}
+.text-big
+{
+    font-size: 41px;
+}
+.text-small
+{
+    font-size: 18px;
+}
+.btn
+{
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.btn-sm
+{
+    padding: 6px 10px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+.btn-dark
+{
+    color: black;
+    border:2px solid gray;
+}
+
+.button-log
+{
+    background-color:blueviolet;
+    color: white;
+    cursor: pointer;
+    padding: 6px 10px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+.section
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
+}
+.section-left
+{
+    flex-direction: row-reverse;
+}
+.text-center
+{
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;
+}
+.form
+{
+    max-width: 62%;
+    margin: 25px auto;
+}
+.form-input
+{
+    margin: 14px 0;
+    padding: 5px 3px;
+    width: 100%;
+    font-size: 18px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.text-footer
+{
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.line
+{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+.service-image 
+{
+    padding: 23px 78px;
+    width: 24.99999%;
+    float: left;
+}
+
+
+.services
+{
+    border: 1px solid #ccc;
+}
+
+.services:hover 
+{
+    border: 2px solid #777;
+}
+
+.services img 
+{
+    width: 80%;
+    height: auto;
+}
+
+.desc 
+{
+    padding: 15px;
+    text-align: center;
+}
+
+.container2
+{
+    width: 100%;
+    height: auto;
+}
+.image
+{
+    float: right;
+    width: 30%;
+    height: 30%;
+}
+
+/*footer*/
+.footer
+{
+    padding: 40px 40px 40px 40px;
+    background: rgb(0, 0, 0);
+    font-family: "Lucida Sans Unicode";
+    font-size: 50px;
+    text-align: center;    
+}
+.footer .footer-icons .fa
+{
+    color: white;
+}
+.footer-center .footer-links
+{
+   font-size: large;
+}
+.footer-left
+{
+    color: white;
+    font-size: 30px;
+}
+.footer-left .fa
+{
+    color: white;
+    font-size: 50px;
+}
+
+/*form*/
+form
+{
+    width: 500px;
+    padding: 30px 49px 51px 45px;;
+    margin: 0 auto;
+    box-shadow: 0px 9px 13px 5px;
+    border-radius: 5px ;    
+}
+#form
+{
+    padding: 50px;
+}
+select.form-control {
+    width: 406px;
+    border: black solid;
+    border-radius: 5px;
+    height: 41px;
+}
+    
+form input 
+{
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+    background: white;
+}
+form input p
+{
+    font-weight: 500;
+    font-size: 50px; 
+}
+form #message 
+{
+    width: 100%;
+    border-radius: 5px;
+    background: white;
+
+}
+form #submit 
+{
+    height: 30px;
+    background: blueviolet;
+}
+.category,.time
+{
+    width: 100%;
+    height: 41px;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+.page-heading
+{
+    text-align: center;
+    color: white;
+    background-color: blueviolet;
+    padding: 20px;
+}
+
+
+/* Create two equal columns that floats next to each other */
+.column 
+{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; 
+}
+
+/* Clear floats after the columns */
+.row:after 
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.success,
+.error,
+.attention 
+{
+    color: white;
+    padding: 5px;
+    margin: 5px 0 15px 0;
+}
+.main .text-center
+{
+    background: black;          
+}
+table 
+{
+    width:100%;
+}
+
+table, th, td 
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td 
+{
+    padding: 15px;
+    text-align: left;
+}
+#t01 tr:nth-child(even) 
+{
+    background-color: #eee;
+}
+#t01 tr:nth-child(odd) 
+{
+    background-color: #fff;
+}
+#t01 th 
+{
+    background-color: black;
+    color: white;
+}

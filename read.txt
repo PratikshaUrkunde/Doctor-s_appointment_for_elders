@@ -1,0 +1,6 @@
+
+
+/*Admin login*/
+
+username:admin
+pass:admin
